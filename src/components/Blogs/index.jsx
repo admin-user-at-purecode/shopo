@@ -25,7 +25,7 @@ export default function Blogs() {
               <DataIteration
                 datas={blog.blogs}
                 startLength={0}
-                endLength={blog.blogs.length}
+                endLength={blog.blogs.length-1}
               >
                 {({ datas }) => (
                   <div
