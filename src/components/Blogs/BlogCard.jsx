@@ -18,20 +18,6 @@ export default function BlogCard({ className, datas }) {
         />
       </div>
       <div className="p-[24px]">
-        <div className="short-data flex space-x-9 items-center mb-3">
-          <div className="flex space-x-1.5 items-center">
-          <IcoPeople />
-            <span className="text-sm text-qgraytwo capitalize">
-              By {datas.by}
-            </span>
-          </div>
-          <div className="flex space-x-1.5 items-center">
-          <IcoPeople/>
-            <span className="text-sm text-qgraytwo">
-              {datas.comments_length} Comments
-            </span>
-          </div>
-        </div>
         <div className="details">
           <a to="/blogs/blog">
             <h1 className="text-[20px] text-qblack hover:text-blue-500 font-semibold line-clamp-2 mb-1 capitalize lg:text-[18px]">

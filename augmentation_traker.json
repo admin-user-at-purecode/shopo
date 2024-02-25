@@ -19,7 +19,8 @@
       "Blogs",
       "BlogCard",
       "DiscountBanner",
-      "Footer"
+      "Footer" 
+      
     ],
     "component_information": {
       "TopBar": {
