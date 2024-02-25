@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DiscountBanner from "./DiscountBanner";
+// import DiscountBanner from "./DiscountBanner";
 import Drawer from "./Drawer";
 import Footer from "./Footer";
 import Header from "./Headers";
@@ -14,7 +14,7 @@ export default function Layout({ children, childrenClasses }) {
         <div className={`w-full  ${childrenClasses || "pt-[30px] pb-[60px]"}`}>
           {children && children}
         </div>
-        <DiscountBanner />
+        {/* <DiscountBanner /> */}
         <Footer />
       </div>
     </>

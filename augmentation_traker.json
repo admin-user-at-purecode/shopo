@@ -18,7 +18,6 @@
       "PageTitle",
       "Blogs",
       "BlogCard",
-      "DiscountBanner",
       "Footer"
     ],
     "component_information": {
@@ -145,34 +144,6 @@
           }
         },
         "children_orientation_description": "image,heading,paragraph --- all arranged in a flex format"
-      },
-      "DiscountBanner":{
-        "count":1,
-        "location":"below blogs",
-        "children":{
-          "image":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "image"
-          },
-          "heading":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "text"
-          },
-          "input":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "email input"
-          },
-          "button":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "button"
-          }
-
-      }
-
       },
       "footer":{
         "count":1,
