@@ -50,7 +50,7 @@ export default function Footer({ type }) {
     <footer className="footer-section-wrapper bg-white print:hidden">
       <div className="container-x block mx-auto pt-[56px]">
         <div className="w-full flex flex-col items-center mb-[50px]">
-          <div className="mb-[40px]">
+          <div className="mb-[40px] footerLogo">
             <img
                   width="152"
                   height="36"
@@ -60,7 +60,7 @@ export default function Footer({ type }) {
           </div>
           <div className="w-full h-[1px] bg-[#E9E9E9]"></div>
         </div>
-        <div className="lg:flex justify-between mb-[50px]">
+        <div className="lg:flex justify-between mb-[50px] footerItemsContainer">
           <div className="lg:w-[424px]  ml-0 w-full mb-10 lg:mb-0">
             <h1 className="text-[18] font-500 text-[#2F2F2F] mb-5">About Us</h1>
             <p className="text-[#9A9A9A] text-[15px] w-[247px] leading-[28px]">
@@ -137,8 +137,8 @@ export default function Footer({ type }) {
             </div>
           </div>
         </div>
-        <div className="bottom-bar border-t border-qgray-border lg:h-[82px] lg:flex justify-between items-center">
-          <div className="flex lg:space-x-5 justify-between items-center mb-3">
+        <div className="bottom-bar border-t border-qgray-border lg:h-[82px] lg:flex justify-between items-center footerBottom">
+          <div className="flex lg:space-x-5 justify-between items-center mb-3 footerIconsContainer" >
             <div className="flex space-x-5 items-center">
               <a href="#">
                 <Youtube className="fill-current text-qgray hover:text-qblack" />
@@ -161,7 +161,7 @@ export default function Footer({ type }) {
               All rights reserved
             </span>
           </div>
-          <div className="">
+          <div className="footerImagesContainer">
               <img
                 width="318"
                 height="28"
