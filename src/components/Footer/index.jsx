@@ -137,39 +137,6 @@ export default function Footer({ type }) {
             </div>
           </div>
         </div>
-        <div className="bottom-bar border-t border-qgray-border lg:h-[82px] lg:flex justify-between items-center footerBottom">
-          <div className="flex lg:space-x-5 justify-between items-center mb-3 footerIconsContainer" >
-            <div className="flex space-x-5 items-center">
-              <a href="#">
-                <Youtube className="fill-current text-qgray hover:text-qblack" />
-              </a>
-              <a href="#">
-                <Youtube className="fill-current text-qgray hover:text-qblack" />
-              </a>
-              <a href="#">
-                <Youtube className="fill-current text-qgray hover:text-qblack" />
-              </a>
-            </div>
-            <span className="sm:text-base text-[10px] text-qgray font-300">
-              ©2022
-              <a
-                href=""
-                className="font-500 text-qblack mx-1"
-              >
-                Quomodosoft
-              </a>
-              All rights reserved
-            </span>
-          </div>
-          <div className="footerImagesContainer">
-              <img
-                width="318"
-                height="28"
-                src={paymentlogo}
-                alt="payment-getways"
-              />
-          </div>
-        </div>
       </div>
     </footer>
   );
