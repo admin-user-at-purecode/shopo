@@ -5,7 +5,6 @@ import TopBar from "./TopBar";
 import logo from "../../assets/images/logo.svg"
 import ThreeBars from "../icons/ThreeBars";
 
-
 export default function Header({ className, drawerAction, type = 1 }) {
   return (
     <header className={` ${className || ""} header-section-wrapper relative`}>
