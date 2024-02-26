@@ -66,28 +66,6 @@
         },
         "children_orientation_description": "company logo, select and search for filter the results and list of icons --  all arranged in a flex format"
       },
-      "Navbar":{
-        "count":1,
-        "location":"below the Middlebar",
-        "children":{  
-          "dropdowns":{
-            "count":4,
-            "location":"left side of page",
-            "description": "list of different type of dropdowns"
-          },
-          "text":{
-            "count":3,
-            "location":"middle of the page",
-            "description":"a text element"
-          },
-          "button":{
-            "count" : "1",
-            "location":"right end of the page",
-            "description": "button"
-          }
-        },
-        "children_orientation_description": "dropdowns, list items, button  --  all arranged in a flex format"
-      },
       "BreadcrumbCom": {
         "count": 1,
         "location": "below navbar",
@@ -219,6 +197,6 @@
     },
     "functionality": {},
     "sizing_updates": [],
-    "screen_and_layout_augmentations": []
+    "screen_and_layout_augmentations": ["removed Navbar"]
 
 }
