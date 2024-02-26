@@ -18,20 +18,6 @@ export default function BlogCard({ className, datas }) {
         />
       </div>
       <div className="p-[24px]">
-        <div className="short-data flex space-x-9 items-center mb-3">
-          <div className="flex space-x-1.5 items-center">
-          <IcoPeople />
-            <span className="text-sm text-qgraytwo capitalize">
-              By {datas.by}
-            </span>
-          </div>
-          <div className="flex space-x-1.5 items-center">
-          <IcoPeople/>
-            <span className="text-sm text-qgraytwo">
-              {datas.comments_length} Comments
-            </span>
-          </div>
-        </div>
         <div className="details">
           <a to="/blogs/blog">
             <h1 className="text-[20px] text-qblack hover:text-blue-500 font-semibold line-clamp-2 mb-1 capitalize lg:text-[18px]">
@@ -41,6 +27,21 @@ export default function BlogCard({ className, datas }) {
           <p className="text-qgraytwo text-[16px] leading-[30px] line-clamp-2 mb-3 lg:text-[14px]">
             {datas.article}
           </p>
+         <div className="flex justify-between">
+          <div className="short-data flex space-x-4 items-center mb-3 lg-[space-x-6]">
+              <div className="flex space-x-1.5 items-center justify-center">
+              <IcoPeople />
+                <span className="text-sm text-qgraytwo capitalize">
+                  By {datas.by}
+                </span>
+              </div>
+              <div className="flex space-x-1.5 items-center">
+              <IcoPeople/>
+                <span className="text-sm text-qgraytwo">
+                  {datas.comments_length} Comments
+                </span>
+              </div>
+          </div>
           <a href="#">
             <div className="flex items-center space-x-2">
               <span className="text-qblack text-sm font-semibold">
@@ -49,6 +50,7 @@ export default function BlogCard({ className, datas }) {
               <Arrow/>
             </div>
           </a>
+         </div>
         </div>
       </div>
     </div>
