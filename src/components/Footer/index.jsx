@@ -2,20 +2,7 @@ import Youtube from "../icons/Youtube";
 import logo from  "../../assets/images/logo.svg"
 import paymentlogo from  "../../assets/images/payment-getways.png"
 
-const helpfulLinks   = [
-  {
-    id:"1",
-    text: "Flash Sale"
-  },
-  {
-    id:"2",
-    text: "FAQ"
-  },
-  {
-    id:"3",
-    text: "Support"
-  }
-]
+
 const generalLinks   = [
   {
     id:"1",
@@ -58,9 +45,8 @@ export default function Footer({ type }) {
                   alt="logo"
                 />
           </div>
-          <div className="w-full h-[1px] bg-[#E9E9E9]"></div>
         </div>
-        <div className="lg:flex justify-between mb-[50px] footerItemsContainer">
+        <div className="lg:flex items-center  justify-center mb-[50px]">
           <div className="lg:w-[424px]  ml-0 w-full mb-10 lg:mb-0">
             <h1 className="text-[18] font-500 text-[#2F2F2F] mb-5">About Us</h1>
             <p className="text-[#9A9A9A] text-[15px] w-[247px] leading-[28px]">
@@ -68,7 +54,7 @@ export default function Footer({ type }) {
               a firm in the industry.
             </p>
           </div>
-          <div className="flex-1 lg:flex">
+          <div className="flex-1 lg:flex items-center justify-center">
             <div className="lg:w-1/3 w-full mb-10 lg:mb-0">
               <div className="mb-5">
                 <h6 className="text-[18] font-500 text-[#2F2F2F]">Feature</h6>
@@ -100,28 +86,6 @@ export default function Footer({ type }) {
                   <ul className="flex flex-col space-y-4 ">
                   {
                     generalLinks.map((item =>(
-                      <li key  = {item.id}>
-                      <a to="">
-                        <span className="text-[#9A9A9A] text-[15px] hover:text-qblack border-b border-transparent hover:border-qblack cursor-pointer capitalize">
-                          {item.text}
-                        </span>
-                      </a>
-                    </li>
-                    )))
-                  }
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 lg:flex lg:flex-col items-center w-full mb-10 lg:mb-0">
-              <div>
-                <div className="mb-5">
-                  <h6 className="text-[18] font-500 text-[#2F2F2F]">Helpful</h6>
-                </div>
-                <div>
-                  <ul className="flex flex-col space-y-4 ">
-                  {
-                    helpfulLinks.map((item =>(
                       <li key  = {item.id}>
                       <a to="">
                         <span className="text-[#9A9A9A] text-[15px] hover:text-qblack border-b border-transparent hover:border-qblack cursor-pointer capitalize">
