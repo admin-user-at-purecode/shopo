@@ -15,9 +15,6 @@ export default function Middlebar({ className, type }) {
               src={logo}
               alt="logo"
             />
-            <div className="w-[517px] h-[44px]">
-              <SearchBox type={type} className="search-com" />
-            </div>
             <div className="flex space-x-6 items-center">
               <div className="compaire relative">
                     <ThinPeople />
