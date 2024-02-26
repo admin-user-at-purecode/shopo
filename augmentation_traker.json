@@ -119,32 +119,28 @@
           "blogCard":{
             "count":6,
             "location":"below the pageTitle",
-            "description":"a blog card with details"
+            "description":"a blog card with details",
+            "children":{
+              "image":{
+                "count" : "1",
+                "location":"inside the BlogCard",
+                "description": "image"
+              },
+              "heading":{
+                "count" : "1",
+                "location":"inside the BlogCard",
+                "description": "heading text"
+              },
+              "pararaph":{
+                "count" : "1",
+                "location":"inside the BlogCard",
+                "description": "description text"
+              }
+            },
+            "children_orientation_description": "image,heading,paragraph --- all arranged in a flex format"
           }
         },
         "children_orientation_description": "blog cards --- all arranged in a grid format"
-      },
-      "BlogCard":{
-        "count":1,
-        "location":"below the pageTitle, inside blog component",
-        "children":{
-          "image":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "image"
-          },
-          "heading":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "heading text"
-          },
-          "pararaph":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "description text"
-          }
-        },
-        "children_orientation_description": "image,heading,paragraph --- all arranged in a flex format"
       },
       "DiscountBanner":{
         "count":1,
@@ -219,6 +215,6 @@
     },
     "functionality": {},
     "sizing_updates": [],
-    "screen_and_layout_augmentations": []
+    "screen_and_layout_augmentations": ["changed displaying 2 BlogCard`s in desktop into 3 BlogCard`s"]
 
 }
