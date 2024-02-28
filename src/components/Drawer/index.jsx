@@ -61,25 +61,6 @@ export default function Drawer({ className, open, action }) {
           }`}
         >
           <div className="w-full px-5 mt-5 mb-4">
-            <div className="flex justify-between items-center">
-              <div className="flex space-x-5 items-center">
-                <div className="compaire relative">
-                      <ThinPeople />
-                  <span className="w-[18px] h-[18px] rounded-full bg-qyellow absolute -top-2.5 -right-2.5 flex justify-center items-center text-[9px]">
-                    2
-                  </span>
-                </div>
-                <div className="favorite relative">
-                      <ThinPeople />
-                  <span className="w-[18px] h-[18px] rounded-full bg-qyellow absolute -top-2.5 -right-2.5 flex justify-center items-center text-[9px]">
-                    1
-                  </span>
-                </div>
-              </div>
-              <button onClick={action} type="button">
-              <DrawerArrow />
-              </button>
-            </div>
           </div>
           <div className="w-full mt-5 px-5">
             <div className="search-bar w-full h-[34px]  flex ">
