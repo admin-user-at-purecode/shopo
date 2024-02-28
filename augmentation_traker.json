@@ -1,224 +1,220 @@
 {
-    "theme_augmentations": {
-      "color": "red",
-      "font": "Arial",
-      "size": "12px",
-      "background": "white",
-      "border": "1px solid black",
-      "radius": "5px",
-      "shadow": "2px 2px 2px 2px #888888"
-    },
-    "component_names": [
-      "TopBar",
-      "Middlebar",
-      "Navbar",
-      "SearchBox",
-      "Selectbox",
-      "BreadcrumbCom",
-      "PageTitle",
-      "Blogs",
-      "BlogCard",
-      "DiscountBanner",
-      "Footer"
-    ],
-    "component_information": {
-      "TopBar": {
-        "count": 1,
-        "location": "top of the page",
-        "children": {
-          "menu": {
-            "count": 1,
-            "location": "left side (starting) in the Topbar",
-            "description": "List of items"
-          },
-          "selectsList": {
-            "count": 3,
-            "location": "right side in the Topbar",
-            "description": "List of select boxes of country,Language"
-          }
+  "theme_augmentations": {
+    "color": "red",
+    "font": "Arial",
+    "size": "12px",
+    "background": "white",
+    "border": "1px solid black",
+    "radius": "5px",
+    "shadow": "2px 2px 2px 2px #888888"
+  },
+  "component_names": [
+    "TopBar",
+    "Middlebar",
+    "Navbar",
+    "SearchBox",
+    "Selectbox",
+    "BreadcrumbCom",
+    "PageTitle",
+    "Blogs",
+    "BlogCard",
+    "DiscountBanner",
+    "Footer"
+  ],
+  "component_information": {
+    "TopBar": {
+      "count": 1,
+      "location": "top of the page",
+      "children": {
+        "menu": {
+          "count": 1,
+          "location": "left side (starting) in the Topbar",
+          "description": "List of items"
         },
-        "children_orientation_description": "left side menu is an list of items and right side is the list of selects that to select country,language    --  all arranged in a flex format"
-      },
-      "Middlebar": {
-        "count": 1,
-        "location": "below the Topbar",
-        "children": {
-          "logo": {
-            "count": 1,
-            "location": "Left side in the middlebar",
-            "description": "logo"
-          },
-          "searchbox": {
-            "count": 1,
-            "location": "Center in the middlebar",
-            "description": "search input"
-          },
-          "selectbox": {
-            "count": 1,
-            "location": "Center in the middlebar, beside of searchbox",
-            "description": "select"
-          },
-          "IconsList":{
-            "count" : 4,
-            "location":"right end of middlebar",
-            "description":"list of icons"
-          }
-        },
-        "children_orientation_description": "company logo, select and search for filter the results and list of icons --  all arranged in a flex format"
-      },
-      "Navbar":{
-        "count":1,
-        "location":"below the Middlebar",
-        "children":{  
-          "dropdowns":{
-            "count":4,
-            "location":"left side of page",
-            "description": "list of different type of dropdowns"
-          },
-          "text":{
-            "count":3,
-            "location":"middle of the page",
-            "description":"a text element"
-          },
-          "button":{
-            "count" : "1",
-            "location":"right end of the page",
-            "description": "button"
-          }
-        },
-        "children_orientation_description": "dropdowns, list items, button  --  all arranged in a flex format"
-      },
-      "BreadcrumbCom": {
-        "count": 1,
-        "location": "below navbar",
-        "children": {
-          "breadcrumb": {
-            "count": 1,
-            "location": "left side of page",
-            "description": "a path for current page"
-          }
-        },
-        "children_orientation_description": "a breadcrumb showing path for current page  --  all arranged in a flex format"
-      },
-      "PageTitle": {
-        "count": 1,
-        "location": "middle of the page, below breadcrumb",
-        "children": {
-          "heading": {
-            "count": 1,
-            "location": "middle of the page, below breadcrumb",
-            "description": "a text"
-          },
-          "children_orientation_description": "a heading --- all arranged in a flex format"
+        "selectsList": {
+          "count": 3,
+          "location": "right side in the Topbar",
+          "description": "List of select boxes of country,Language"
         }
       },
-      "Blogs":{
-        "count":1,
-        "location":"below the pageTitle",
-        "children":{
-          "blogCard":{
-            "count":6,
-            "location":"below the pageTitle",
-            "description":"a blog card with details"
-          }
+      "children_orientation_description": "left side menu is an list of items and right side is the list of selects that to select country,language    --  all arranged in a flex format"
+    },
+    "Middlebar": {
+      "count": 1,
+      "location": "below the Topbar",
+      "children": {
+        "logo": {
+          "count": 1,
+          "location": "Left side in the middlebar",
+          "description": "logo"
         },
-        "children_orientation_description": "blog cards --- all arranged in a grid format"
-      },
-      "BlogCard":{
-        "count":1,
-        "location":"below the pageTitle, inside blog component",
-        "children":{
-          "image":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "image"
-          },
-          "heading":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "heading text"
-          },
-          "pararaph":{
-            "count" : "1",
-            "location":"inside the BlogCard",
-            "description": "description text"
-          }
+        "searchbox": {
+          "count": 1,
+          "location": "Center in the middlebar",
+          "description": "search input"
         },
-        "children_orientation_description": "image,heading,paragraph --- all arranged in a flex format"
-      },
-      "DiscountBanner":{
-        "count":1,
-        "location":"below blogs",
-        "children":{
-          "image":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "image"
-          },
-          "heading":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "text"
-          },
-          "input":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "email input"
-          },
-          "button":{
-            "count" : "1",
-            "location":"below blogs,middle of DiscountBanner",
-            "description": "button"
-          }
-
-      }
-
-      },
-      "footer":{
-        "count":1,
-        "location":"bottom of the page and below DiscountBanner",
-        "children":{
-            "footerLogo":{
-                "count":1,
-                "location":"below DiscountBanner, inside footer, horizontal center of footer ",
-                "description":"it is a logo of website"
-            },
-            "footerItemsContainer":{
-                "count":1,
-                "location":"below footerLogo",
-                "children":{
-                    "footerItem":{
-                        "count":4,
-                        "location":"Inside footerItemsContainer from left to right",
-                        "description":"it is a flex list item"
-                    }
-                },
-                "description":"flex container for list of items",
-                "children_orientation_description":"list item"
-            },
-            "footerBottom":{
-                "count":1,
-                "location":"bottom last of the page",
-                "children":{
-                    "footerIconsContainer":{
-                        "count":1,
-                        "location":"left side in footerBottom",
-                        "description":"it is a flex container contains icons and text"
-                    },
-                    "footerImagesContainer":{
-                        "count":1,
-                        "location":"right side in footerBottom",
-                        "description":"it is a flex container contains images"
-                    }
-                },
-                "children_orientation_description":"(footerIconsContainer,footerImagesContainer)--all are flex containers"
-            }
+        "selectbox": {
+          "count": 1,
+          "location": "Center in the middlebar, beside of searchbox",
+          "description": "select"
         },
-        "children_orientation_description":"footerLogo is a image and (footerItemsContainer,footerBottom)--all are flex containers"
+        "IconsList":{
+          "count" : 4,
+          "location":"right end of middlebar",
+          "description":"list of icons"
+        }
+      },
+      "children_orientation_description": "company logo, select and search for filter the results and list of icons --  all arranged in a flex format"
+    },
+    "Navbar":{
+      "count":1,
+      "location":"below the Middlebar",
+      "children":{  
+        "dropdowns":{
+          "count":4,
+          "location":"left side of page",
+          "description": "list of different type of dropdowns"
+        },
+        "text":{
+          "count":3,
+          "location":"middle of the page",
+          "description":"a text element"
+        },
+        "button":{
+          "count" : "1",
+          "location":"right end of the page",
+          "description": "button"
+        }
+      },
+      "children_orientation_description": "dropdowns, list items, button  --  all arranged in a flex format"
+    },
+    "BreadcrumbCom": {
+      "count": 1,
+      "location": "below navbar",
+      "children": {
+        "breadcrumb": {
+          "count": 1,
+          "location": "left side of page",
+          "description": "a path for current page"
+        }
+      },
+      "children_orientation_description": "a breadcrumb showing path for current page  --  all arranged in a flex format"
+    },
+    "PageTitle": {
+      "count": 1,
+      "location": "middle of the page, below breadcrumb",
+      "children": {
+        "heading": {
+          "count": 1,
+          "location": "middle of the page, below breadcrumb",
+          "description": "a text"
+        },
+        "children_orientation_description": "a heading --- all arranged in a flex format"
       }
     },
-    "functionality": {},
-    "sizing_updates": [],
-    "screen_and_layout_augmentations": []
+    "Blogs":{
+      "count":1,
+      "location":"below the pageTitle",
+      "children":{
+        "blogCard":{
+          "count":10,
+          "location":"below the pageTitle",
+          "description":"a blog card with details",
+          "children":{
+            "image":{
+              "count" : "1",
+              "location":"inside the BlogCard",
+              "description": "image"
+            },
+            "heading":{
+              "count" : "1",
+              "location":"inside the BlogCard",
+              "description": "heading text"
+            },
+            "pararaph":{
+              "count" : "1",
+              "location":"inside the BlogCard",
+              "description": "description text"
+            }
+          },
+          "children_orientation_description": "image,heading,paragraph --- all arranged in a flex format"
+        }
+      },
+      "children_orientation_description": "blog cards --- all arranged in a grid format"
+    },
+    "DiscountBanner":{
+      "count":1,
+      "location":"below blogs",
+      "children":{
+        "image":{
+          "count" : "1",
+          "location":"below blogs,middle of DiscountBanner",
+          "description": "image"
+        },
+        "heading":{
+          "count" : "1",
+          "location":"below blogs,middle of DiscountBanner",
+          "description": "text"
+        },
+        "input":{
+          "count" : "1",
+          "location":"below blogs,middle of DiscountBanner",
+          "description": "email input"
+        },
+        "button":{
+          "count" : "1",
+          "location":"below blogs,middle of DiscountBanner",
+          "description": "button"
+        }
+
+    }
+
+    },
+    "footer":{
+      "count":1,
+      "location":"bottom of the page and below DiscountBanner",
+      "children":{
+          "footerLogo":{
+              "count":1,
+              "location":"below DiscountBanner, inside footer, horizontal center of footer ",
+              "description":"it is a logo of website"
+          },
+          "footerItemsContainer":{
+              "count":1,
+              "location":"below footerLogo",
+              "children":{
+                  "footerItem":{
+                      "count":4,
+                      "location":"Inside footerItemsContainer from left to right",
+                      "description":"it is a flex list item"
+                  }
+              },
+              "description":"flex container for list of items",
+              "children_orientation_description":"list item"
+          },
+          "footerBottom":{
+              "count":1,
+              "location":"bottom last of the page",
+              "children":{
+                  "footerIconsContainer":{
+                      "count":1,
+                      "location":"left side in footerBottom",
+                      "description":"it is a flex container contains icons and text"
+                  },
+                  "footerImagesContainer":{
+                      "count":1,
+                      "location":"right side in footerBottom",
+                      "description":"it is a flex container contains images"
+                  }
+              },
+              "children_orientation_description":"(footerIconsContainer,footerImagesContainer)--all are flex containers"
+          }
+      },
+      "children_orientation_description":"footerLogo is a image and (footerItemsContainer,footerBottom)--all are flex containers"
+    }
+  },
+  "functionality": {},
+  "sizing_updates": [],
+  "screen_and_layout_augmentations": ["added more 4 blog cards"]
 
 }
