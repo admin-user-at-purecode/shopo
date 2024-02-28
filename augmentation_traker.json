@@ -219,6 +219,6 @@
     },
     "functionality": {},
     "sizing_updates": [],
-    "screen_and_layout_augmentations": []
+    "screen_and_layout_augmentations": ["changed the width and height of blog cards, changed spacing between the childs of blogCard"]
 
 }

@@ -8,7 +8,7 @@ export default function BlogCard({ className, datas }) {
         className || ""
       }`}
     >
-      <div className="img w-full h-[320px] lg:h-[280px]">
+      <div className="img w-full h-[300px] lg:h-[280px]">
         <img
           src={`${import.meta.env.VITE_PUBLIC_URL}/assets/images/${
             datas.picture
@@ -17,15 +17,15 @@ export default function BlogCard({ className, datas }) {
           className="w-full h-full object-cover object-center"
         />
       </div>
-      <div className="p-[24px]">
+      <div className="p-[24px] flex flex-col space-y-1.5 mt-2">
         <div className="short-data flex space-x-9 items-center mb-3">
-          <div className="flex space-x-1.5 items-center">
+          <div className="flex space-x-2 items-center">
           <IcoPeople />
             <span className="text-sm text-qgraytwo capitalize">
               By {datas.by}
             </span>
           </div>
-          <div className="flex space-x-1.5 items-center">
+          <div className="flex space-x-2 items-center">
           <IcoPeople/>
             <span className="text-sm text-qgraytwo">
               {datas.comments_length} Comments
@@ -38,12 +38,12 @@ export default function BlogCard({ className, datas }) {
               {datas.title}
             </h1>
           </a>
-          <p className="text-qgraytwo text-[16px] leading-[30px] line-clamp-2 mb-3 lg:text-[14px]">
+          <p className="text-qgraytwo text-[15px] leading-[30px] line-clamp-2 mb-3 lg:text-[14px]">
             {datas.article}
           </p>
           <a href="#">
             <div className="flex items-center space-x-2">
-              <span className="text-qblack text-sm font-semibold">
+              <span className="text-qblack text-[14px] font-semibold">
                 View More
               </span>
               <Arrow/>
